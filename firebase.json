@@ -4,6 +4,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
+    "site": "fireact-core-demo",
     "public": "dist",
     "ignore": [
       "firebase.json",
