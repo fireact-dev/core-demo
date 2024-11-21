@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+# @fireact.dev/core Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a demonstration repository for the [@fireact.dev/core](https://www.npmjs.com/package/@fireact.dev/core) package, which provides essential components and utilities for building Firebase-powered React applications.
 
-Currently, two official plugins are available:
+![Core Demo Screenshot](core-demo.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
 
-## Expanding the ESLint configuration
+The @fireact.dev/core package offers:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Authentication Components**: Pre-built components for sign-in, sign-up, password reset, and protected routes
+- **User Management**: Complete user profile management including name/email editing, password changes, and account deletion
+- **Social Login Integration**: Support for multiple social authentication providers (Google, Microsoft, Facebook, Apple, GitHub, Twitter, Yahoo)
+- **Internationalization**: Built-in i18n support with language detection and switching capabilities
+- **Responsive Layouts**: Ready-to-use authenticated and public layouts with desktop/mobile navigation
+- **Firebase Integration**: Seamless Firebase setup with emulator support for local development
 
-- Configure the top-level `parserOptions` property like this:
+## Live Demo
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Experience these features in action by visiting our live demo site:
+https://fireact.dev/demos/
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Documentation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Learn how to build your own web application using @fireact.dev/core:
+https://docs.fireact.dev/core/
