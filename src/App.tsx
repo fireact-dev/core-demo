@@ -16,7 +16,8 @@ import {
   DeleteAccount,
   DesktopMenuItems,
   MobileMenuItems,
-  Logo
+  Logo,
+  FirebaseAuthActions
 } from '@fireact.dev/core';
 import config from './config.json';
 import i18n from 'i18next';
@@ -70,6 +71,7 @@ function App() {
                 <Route path={config.pages.signIn} element={<SignIn />} />
                 <Route path={config.pages.signUp} element={<SignUp />} />
                 <Route path={config.pages.resetPassword} element={<ResetPassword />} />
+                <Route path={config.pages.firebaseActions} element={<FirebaseAuthActions />} />
               </Route>
             </Routes>
           </LoadingProvider>
